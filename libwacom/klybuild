@@ -11,8 +11,7 @@ group="dev.libs"
 setup(){
 cd $SOURCEDIR
 meson setup $BUILDDIR \
---prefix=/usr\
---buildtype=release \
+--prefix=/usr \
 -Dtests=disabled
 }
 build(){
